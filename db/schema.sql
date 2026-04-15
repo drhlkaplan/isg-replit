@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS firms (
     secondary_color VARCHAR(7) DEFAULT '#0072b5',
     header_title VARCHAR(150),
     kvkk_consent_text TEXT,
+    footer_text TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
@@ -420,5 +421,39 @@ INSERT IGNORE INTO courses (id, category_id, parent_course_id, title, descriptio
 (144, 1, 14, 'Mutfak — Az Tehlikeli İSG Teknik Konular (Tekrar)',       'Kimyasal/fiziksel riskler, elle taşıma, yangın.',                             'tekrar', 'teknik',           'online', 'mutfak', 4, 135, 'active'),
 (145, 1, 14, 'Mutfak — İşe ve İşyerine Özgü Konular (Tekrar)',         'Kişisel hijyen, mutfak yangınları, kimyasal etkenler, mutfak ekipmanları.',    'tekrar', 'ise_ozgu',         'online', 'mutfak', 5, 90,  'active'),
 (146, 1, 14, 'Mutfak — Az Tehlikeli İSG Final Sınavı (Tekrar)',        'Final sınavı — min. 60 puan.',                                                 'tekrar', 'final_sinav',      'online', 'mutfak', 6, 30,  'active');
+
+-- ============================================================
+-- YÜZ YÜZE EĞİTİM TABLOLARI
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS face_to_face_sessions (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    course_id INT UNSIGNED NOT NULL,
+    firm_id INT UNSIGNED NULL,
+    title VARCHAR(255) NOT NULL,
+    scheduled_at DATETIME NOT NULL,
+    duration_minutes INT UNSIGNED DEFAULT 60,
+    location VARCHAR(255),
+    status ENUM('scheduled','active','completed','cancelled') DEFAULT 'scheduled',
+    qr_token VARCHAR(50) NOT NULL UNIQUE,
+    completion_question TEXT NULL,
+    created_by INT UNSIGNED NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (course_id)  REFERENCES courses(id)  ON DELETE CASCADE,
+    FOREIGN KEY (firm_id)    REFERENCES firms(id)    ON DELETE SET NULL,
+    FOREIGN KEY (created_by) REFERENCES users(id)    ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS face_to_face_attendance (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    session_id INT UNSIGNED NOT NULL,
+    user_id    INT UNSIGNED NOT NULL,
+    joined_at  DATETIME DEFAULT CURRENT_TIMESTAMP,
+    completed  TINYINT(1) DEFAULT 0,
+    join_method ENUM('qr','manual') DEFAULT 'qr',
+    UNIQUE KEY uq_session_user (session_id, user_id),
+    FOREIGN KEY (session_id) REFERENCES face_to_face_sessions(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id)    REFERENCES users(id)                 ON DELETE CASCADE
+);
 
 SET FOREIGN_KEY_CHECKS = 1;
