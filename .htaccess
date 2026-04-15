@@ -1,36 +1,106 @@
-# İSG LMS — Apache Yönlendirme Kuralları
-# cPanel / Plesk / Apache 2.4+ ile uyumlu
+# İSG LMS — Apache .htaccess
+# cPanel / CyberPanel / LiteSpeed / Apache 2.4+ ile uyumludur
+# Dosyaları public_html/ kök dizinine yüklediğinizde bu ayarlar otomatik aktif olur.
+#
+# Alt dizine kurulum yapıyorsanız (örn. public_html/isg/) aşağıdaki satırı değiştirin:
+#   RewriteBase /isg/
+# ─────────────────────────────────────────────────────────────────────────────
 
-# ── URL Yönlendirme ───────────────────────────────────────────────────
+# ── PHP Ayarları (cPanel/CyberPanel shared hosting için) ──────────────────
+<IfModule mod_php.c>
+    php_value upload_max_filesize   128M
+    php_value post_max_size         130M
+    php_value memory_limit          256M
+    php_value max_execution_time    120
+    php_value max_input_time        120
+    php_flag  display_errors        Off
+    php_flag  log_errors            On
+    php_value session.cookie_httponly 1
+    php_value session.use_strict_mode 1
+</IfModule>
+
+# ── URL Yönlendirme (mod_rewrite) ─────────────────────────────────────────
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # install.php her zaman doğrudan çalışsın
+    # install.php her zaman doğrudan çalışsın (kurulum sihirbazı)
     RewriteRule ^install\.php$ - [L]
 
-    # Mevcut dosya ve dizinleri doğrudan sun (assets/, uploads/, vb.)
+    # HTTPS'e zorla (cPanel SSL aktifse — istemiyorsanız bu bloğu yorum satırına alın)
+    # RewriteCond %{HTTPS} off
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Mevcut dosya ve dizinleri doğrudan sun (assets/, uploads/, vendor/ vb.)
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
 
-    # Tüm istekleri index.php'ye yönlendir
+    # Tüm diğer istekleri index.php'ye yönlendir
     RewriteRule ^ index.php [L]
 </IfModule>
 
-# ── Güvenlik Başlıkları (isteğe bağlı, mod_headers gerektirir) ───────
+# ── Güvenlik: Hassas Dosyalara Erişimi Engelle ────────────────────────────
+<FilesMatch "^(composer\.(json|lock)|\.env|install\.lock)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# db/ ve src/ dizinlerine doğrudan erişimi engelle
+<IfModule mod_rewrite.c>
+    RewriteRule ^(db|src|controllers)/.*$ - [F,L]
+</IfModule>
+
+# Gizli dosyalara (.git, .env, vb.) erişimi engelle
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ── Güvenlik Başlıkları ────────────────────────────────────────────────────
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # Kendi alan adınızı ekleyin: Content-Security-Policy
+    # Header always set Content-Security-Policy "default-src 'self' ..."
 </IfModule>
 
-# ── Statik Dosya Cache (isteğe bağlı, mod_expires gerektirir) ────────
+# ── Statik Dosya Cache ────────────────────────────────────────────────────
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType text/css               "access plus 7 days"
-    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType text/css               "access plus 14 days"
+    ExpiresByType application/javascript "access plus 14 days"
     ExpiresByType image/png              "access plus 30 days"
     ExpiresByType image/jpeg             "access plus 30 days"
     ExpiresByType image/svg+xml          "access plus 30 days"
+    ExpiresByType image/gif              "access plus 30 days"
+    ExpiresByType font/woff2             "access plus 1 year"
+    ExpiresByType font/woff              "access plus 1 year"
+    ExpiresByType application/pdf        "access plus 1 day"
 </IfModule>
+
+# ── Sıkıştırma (mod_deflate) ──────────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ── Dizin Listesini Kapat ─────────────────────────────────────────────────
+Options -Indexes
+
+# ── Karakter Kümesi ───────────────────────────────────────────────────────
+AddDefaultCharset UTF-8

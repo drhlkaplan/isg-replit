@@ -129,27 +129,45 @@ function hasFatalError(array $reqs): bool {
 }
 
 function writePDO(array $p): PDO {
-    $dsn = sprintf('mysql:host=%s;port=%d;charset=utf8mb4', $p['host'], $p['port']);
-    $pdo = new PDO($dsn, $p['user'], $p['pass'], [
+    $dsn = sprintf('mysql:host=%s;port=%d;charset=utf8mb4', $p['db_host'], $p['db_port']);
+    $pdo = new PDO($dsn, $p['db_user'], $p['db_pass'], [
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ]);
     return $pdo;
 }
 
+/**
+ * Execute statements from a SQL file against an already-selected database.
+ * Skips CREATE DATABASE and USE statements (handled by the installer itself).
+ * Strips line comments before splitting on semicolons.
+ */
 function runSqlFile(PDO $pdo, string $file): void {
-    $sql = file_get_contents($file);
-    // Split on semicolons but keep delimiter awareness simple
+    $raw = file_get_contents($file);
+
+    // Remove single-line comments (-- ... and # ...)
+    $raw = preg_replace('/(?m)(--[^\n]*$|#[^\n]*$)/', '', $raw);
+
+    // Remove block comments /* ... */
+    $raw = preg_replace('/\/\*.*?\*\//s', '', $raw);
+
+    // Split on semicolons
     $statements = array_filter(
-        array_map('trim', explode(';', $sql)),
-        function($s) { return $s !== ''; }
+        array_map('trim', explode(';', $raw)),
+        fn($s) => $s !== ''
     );
+
     foreach ($statements as $stmt) {
+        // Skip statements that the installer already handled
+        if (preg_match('/^\s*(CREATE\s+DATABASE|DROP\s+DATABASE|USE\s+\S+)\s*$/i', $stmt)) {
+            continue;
+        }
         try {
             $pdo->exec($stmt);
         } catch (PDOException $e) {
-            // Skip "table already exists" etc.
-            if (!in_array($e->getCode(), ['42S01', '42000'])) throw $e;
+            $code = $e->getCode();
+            // 42S01 = table already exists, 23000 = duplicate entry (INSERT IGNORE safe to skip)
+            if (!in_array($code, ['42S01', '23000'])) throw $e;
         }
     }
 }
@@ -266,26 +284,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 runSqlFile($pdo, $schemaFile);
                 $success[] = 'Tablo yapısı oluşturuldu (20 tablo).';
 
-                // 4. Demo verisi (isteğe bağlı)
+                // 4. Seed verisi: tüm 14 paket için ek modüller (isteğe bağlı)
                 if ($p['seed_demo']) {
                     $seedFile = __DIR__ . '/db/seed_courses.sql';
                     if (file_exists($seedFile)) {
                         runSqlFile($pdo, $seedFile);
-                        $success[] = 'Demo kurs verileri yüklendi.';
+                        $success[] = '14 eğitim paketinin tüm modülleri yüklendi (seed_courses.sql).';
                     }
                 }
 
                 // 5. Admin kullanıcısı oluştur / güncelle
                 $hash = password_hash($p['admin_pass'], PASSWORD_BCRYPT, ['cost' => 12]);
                 $stmt = $pdo->prepare("
-                    INSERT INTO users (firm_id, role_id, first_name, last_name, email, password, status)
+                    INSERT INTO users (firm_id, role_id, first_name, last_name, email, password_hash, status)
                     VALUES (1, 1, ?, ?, ?, ?, 'active')
                     ON DUPLICATE KEY UPDATE
-                        first_name = VALUES(first_name),
-                        last_name  = VALUES(last_name),
-                        password   = VALUES(password),
-                        role_id    = 1,
-                        status     = 'active'
+                        first_name    = VALUES(first_name),
+                        last_name     = VALUES(last_name),
+                        password_hash = VALUES(password_hash),
+                        role_id       = 1,
+                        status        = 'active'
                 ");
                 $stmt->execute([$p['admin_first'], $p['admin_last'], $p['admin_email'], $hash]);
                 $success[] = "Süper admin hesabı oluşturuldu: {$p['admin_email']}";
@@ -687,12 +705,12 @@ body  { background: #f0f4f8; font-family: 'Segoe UI', system-ui, sans-serif; }
     <div class="form-check form-switch ps-0">
         <div class="d-flex align-items-start gap-3 p-3 border rounded-3">
             <input class="form-check-input mt-1 flex-shrink-0" type="checkbox" name="seed_demo"
-                   id="seedDemo" style="width:2.5em;height:1.5em">
+                   id="seedDemo" style="width:2.5em;height:1.5em" checked>
             <label class="form-check-label" for="seedDemo">
-                <div class="fw-semibold">Demo Kurs Verilerini Yükle</div>
+                <div class="fw-semibold">Tüm Eğitim Modüllerini Yükle <span class="badge bg-success ms-1" style="font-size:.7rem">Önerilen</span></div>
                 <div class="text-muted" style="font-size:.82rem">
-                    Örnek kurs paketleri ve kategorileri otomatik oluşturulsun.
-                    Gerçek üretim kurulumunda işaretlememek önerilir.
+                    14 eğitim paketinin tüm alt modülleri (ön değerlendirme, genel, sağlık, teknik, işe özgü, final sınavı)
+                    otomatik oluşturulsun. İşaretli gelmesi önerilir — sonradan tekrar çalıştırılabilir.
                 </div>
             </label>
         </div>

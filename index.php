@@ -6,7 +6,9 @@ session_start();
 
 // Kurulum tamamlanmamışsa install.php'ye yönlendir
 if (!file_exists(__DIR__ . '/install.lock') && basename($_SERVER['SCRIPT_FILENAME'] ?? '') !== 'install.php') {
-    header('Location: /install.php');
+    // Use script-relative redirect so it works in root or subdirectory installations
+    $scriptDir = rtrim(dirname($_SERVER['SCRIPT_NAME'] ?? ''), '/');
+    header('Location: ' . $scriptDir . '/install.php');
     exit;
 }
 
