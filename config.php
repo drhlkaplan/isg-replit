@@ -4,6 +4,7 @@ define('DB_PORT', 3306);
 define('DB_NAME', 'isg_lms');
 define('DB_USER', 'root');
 define('DB_PASS', '');
+define('DB_SOCKET', '/home/runner/mysql_run/mysql.sock');
 define('DB_CHARSET', 'utf8mb4');
 
 define('APP_NAME', 'İSG Eğitim Platformu');

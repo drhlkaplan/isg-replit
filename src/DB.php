@@ -6,8 +6,14 @@ class DB {
     private \PDO $pdo;
 
     private function __construct() {
-        $dsn = sprintf('mysql:host=%s;port=%d;dbname=%s;charset=%s',
-            DB_HOST, DB_PORT, DB_NAME, DB_CHARSET);
+        // Use Unix socket when available (Replit environment), fall back to TCP
+        if (defined('DB_SOCKET') && file_exists(DB_SOCKET)) {
+            $dsn = sprintf('mysql:unix_socket=%s;dbname=%s;charset=%s',
+                DB_SOCKET, DB_NAME, DB_CHARSET);
+        } else {
+            $dsn = sprintf('mysql:host=%s;port=%d;dbname=%s;charset=%s',
+                DB_HOST, DB_PORT, DB_NAME, DB_CHARSET);
+        }
         $options = [
             \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
