@@ -1,0 +1,36 @@
+# İSG LMS — Apache Yönlendirme Kuralları
+# cPanel / Plesk / Apache 2.4+ ile uyumlu
+
+# ── URL Yönlendirme ───────────────────────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # install.php her zaman doğrudan çalışsın
+    RewriteRule ^install\.php$ - [L]
+
+    # Mevcut dosya ve dizinleri doğrudan sun (assets/, uploads/, vb.)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Tüm istekleri index.php'ye yönlendir
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# ── Güvenlik Başlıkları (isteğe bağlı, mod_headers gerektirir) ───────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# ── Statik Dosya Cache (isteğe bağlı, mod_expires gerektirir) ────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css               "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/png              "access plus 30 days"
+    ExpiresByType image/jpeg             "access plus 30 days"
+    ExpiresByType image/svg+xml          "access plus 30 days"
+</IfModule>

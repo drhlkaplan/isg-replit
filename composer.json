@@ -1,0 +1,22 @@
+{
+    "name": "isg/lms",
+    "description": "Turkish ISG Online Training Platform",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "setasign/fpdf": "^1.8",
+        "tecnickcom/tcpdf": "^6.6",
+        "endroid/qr-code": "^4.8",
+        "phpoffice/phpspreadsheet": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ISG\\": "src/",
+            "ISG\\Controllers\\": "controllers/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    }
+}

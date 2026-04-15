@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6B1nCEMA7hf_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Genel Konular - Tehlikeli</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="x-none">Tehlikeli İş Yerleri İçin Genel İSG Konuları Eğitimi</langstring>
+        </description>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Genel_Konular_-_Tehlikeli_ORG">
+    <organization identifier="Genel_Konular_-_Tehlikeli_ORG">
+      <title>Genel Konular - Tehlikeli</title>
+      <item identifier="Genel_Konular_-_Az_Tehlikeli_SCO" isvisible="true" identifierref="__6B1nCEMA7hf_course_id_RES">
+        <title>Genel Konular - Tehlikeli</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6B1nCEMA7hf_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="story_content/txt__default_5i1kVORvbVp.swf" />
+      <file href="story_content/Shape65hUgOrXZOI.swf" />
+      <file href="story_content/Shape5eBtTyn5Fou.swf" />
+      <file href="story_content/Shape6Fbp2VC2JYA.swf" />
+      <file href="story_content/Shape6JiM9O6R0pr.swf" />
+      <file href="story_content/6j0FonaL6vU_80_DX656_DY656.swf" />
+      <file href="mobile/6j0FonaL6vU_80_DX656_DY656_CX273_CY492.png" />
+      <file href="story_content/6EfEhDaPozi_80_DX1440_DY1440.swf" />
+      <file href="mobile/6EfEhDaPozi_80_DX1440_DY1440_CX1080_CY810.png" />
+      <file href="story_content/video_5unrBTmASlT_22_48_720x406.mp4" />
+      <file href="mobile/video_5unrBTmASlT_22_48_720x406.jpg" />
+      <file href="story_content/Shape6aoSCBOyig1.swf" />
+      <file href="story_content/Shape5oGu93zCk07.swf" />
+      <file href="story_content/Shape5dR4mrEU5Wb.swf" />
+      <file href="story_content/Shape6TmAUANY4eL.swf" />
+      <file href="story_content/video_6IXda98rgud_22_48_720x406.mp4" />
+      <file href="mobile/video_6IXda98rgud_22_48_720x406.jpg" />
+      <file href="story_content/Shape6eryotGL4qW.swf" />
+      <file href="story_content/Shape5uagrFRYs3N.swf" />
+      <file href="story_content/Shape5fWVkqwvH2p.swf" />
+      <file href="story_content/Shape6m2WS820OEt.swf" />
+      <file href="story_content/video_6Vol8jJ2dSx_22_48_720x406.mp4" />
+      <file href="mobile/video_6Vol8jJ2dSx_22_48_720x406.jpg" />
+      <file href="meta.xml" />
+      <file href="story_content/FontFactory.swf" />
+      <file href="story_content/fonts.swf" />
+      <file href="mobile/5mZydhhdpK5.png" />
+      <file href="story_content/logo.swf" />
+      <file href="story_content/frame.xml" />
+      <file href="story_content/frame.json" />
+      <file href="story_content/user.js" />
+      <file href="mobile/txt__default_5i1kVORvbVp.png" />
+      <file href="mobile/Shape65hUgOrXZOI.png" />
+      <file href="mobile/Shape5eBtTyn5Fou.png" />
+      <file href="mobile/Shape6Fbp2VC2JYA.png" />
+      <file href="mobile/Shape6JiM9O6R0pr.png" />
+      <file href="mobile/Shape6aoSCBOyig1.png" />
+      <file href="mobile/Shape5oGu93zCk07.png" />
+      <file href="mobile/Shape5dR4mrEU5Wb.png" />
+      <file href="mobile/Shape6TmAUANY4eL.png" />
+      <file href="mobile/Shape6eryotGL4qW.png" />
+      <file href="mobile/Shape5uagrFRYs3N.png" />
+      <file href="mobile/Shape5fWVkqwvH2p.png" />
+      <file href="mobile/Shape6m2WS820OEt.png" />
+      <file href="story.swf" />
+      <file href="story_content/frame.swf" />
+      <file href="story_content/slides/6Mr4AuALeBS.swf" />
+      <file href="story_content/slides/6VY1nY2wqfV.swf" />
+      <file href="story_content/slides/6pG3I9p0O1s.swf" />
+      <file href="story_content/slides/69VvpyP6URM.swf" />
+      <file href="story_content/slides/6U4D1reNAok.swf" />
+      <file href="story_content/slides/5fyxAmffNTa.swf" />
+      <file href="story_content/slides/63il2jJEdTD.swf" />
+      <file href="story_content/slides/6QWci9X4ijG.swf" />
+      <file href="story_content/data.swf" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5fyxAmffNTa.js" />
+      <file href="html5/data/js/63il2jJEdTD.js" />
+      <file href="html5/data/js/69VvpyP6URM.js" />
+      <file href="html5/data/js/6Mr4AuALeBS.js" />
+      <file href="html5/data/js/6pG3I9p0O1s.js" />
+      <file href="html5/data/js/6QWci9X4ijG.js" />
+      <file href="html5/data/js/6U4D1reNAok.js" />
+      <file href="html5/data/js/6VY1nY2wqfV.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/app.min.js" />
+      <file href="html5/lib/stylesheets/main.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="story.html" />
+      <file href="story_flash.html" />
+      <file href="story_html5.html" />
+      <file href="story_content/blank.html" />
+      <file href="story_content/story.js" />
+      <file href="index_lms.html" />
+      <file href="index_lms_html5.html" />
+      <file href="index_lms_flash.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/AICCFunctions.js" />
+      <file href="lms/API.js" />
+      <file href="lms/APIConstants.js" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/Configuration.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/lms.js" />
+      <file href="lms/LMSAPI.js" />
+      <file href="lms/NONEFunctions.js" />
+      <file href="lms/SCORM2004Functions.js" />
+      <file href="lms/SCORMFunctions.js" />
+      <file href="lms/UtilityFunctions.js" />
+    </resource>
+  </resources>
+</manifest>

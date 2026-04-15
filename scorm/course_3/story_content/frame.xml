@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns01001000011" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+  <layouts>
+    <layout name="npnxnanbsnfns01001000011" font="Open Sans" controllayout="npnxnanbsnfns01001000011" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+    <layout name="pxabnsnfns01001000011" font="Open Sans" controllayout="pxabnsnfns01001000011" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+    <layout name="npxnabnsnfns01001000011" font="Open Sans" controllayout="npxnabnsnfns01001000011" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+    <layout name="npnxnanbnsnfns01001000011" font="Open Sans" controllayout="npnxnanbnsnfns01001000011" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+    <layout name="pxabnsnfns01001000010" font="Open Sans" controllayout="pxabnsnfns01001000010" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+    <layout name="pnxanbnsnfns01001000011" font="Open Sans" controllayout="pnxanbnsnfns01001000011" colorscheme="npxnabnsnfns01001000011" string_table="npxnabnsnfns01001000011" />
+  </layouts>
+  <control_options>
+    <optiongroups>
+      <optiongroup name="sidebaroptions">
+        <options>
+          <option name="title_enabled" value="true">
+            <options>
+              <option name="title_text" value="İş Sağlığı Ve Güvenliği Değerlendirme Test Soruları - Az Tehlikeli" />
+            </options>
+          </option>
+          <option name="logo_enabled" value="true">
+            <options>
+              <option name="logo_url" value="story_content/logo.swf">
+                <properties>
+                  <property name="width" value="200" />
+                  <property name="height" value="109" />
+                </properties>
+              </option>
+              <option name="html5_logo_url" value="mobile/6mYuwRf0GMR.png" />
+            </options>
+          </option>
+          <option name="sidebar_enabled" value="true">
+            <options>
+              <option name="sidebarpos" value="left" />
+              <option name="closed" value="false" />
+            </options>
+          </option>
+          <optionlist name="tabs">
+            <listitems>
+              <listitem name="resources" value="false" group="linkright" />
+              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="glossary" value="false" group="sidebar" />
+              <listitem name="transcript" value="false" group="sidebar" />
+            </listitems>
+          </optionlist>
+          <option name="time_enabled" value="false">
+            <options>
+              <option name="time_format" value="elapsed" />
+            </options>
+          </option>
+          <option name="video_enabled" value="false">
+            <options>
+              <option name="height" value="135" />
+            </options>
+          </option>
+        </options>
+      </optiongroup>
+      <optiongroup name="menuoptions">
+        <options>
+          <option name="flow" value="free" />
+          <option name="wraplistitems" value="false" />
+          <option name="tooltips" value="true" />
+          <option name="autocollapse" value="true" />
+          <option name="autonumber" value="false" />
+          <option name="enableresultsicons" value="true" />
+        </options>
+      </optiongroup>
+      <optiongroup name="controls">
+        <options>
+          <option name="volume" value="false" />
+          <option name="seekbar" value="false">
+            <options>
+              <option name="readonly" value="true" />
+            </options>
+          </option>
+          <option name="pauseplay" value="false" />
+          <option name="replay" value="false" />
+          <option name="search" value="true" />
+          <option name="closed_captions" value="false">
+            <options>
+              <option name="font" value="Open Sans" />
+            </options>
+          </option>
+        </options>
+      </optiongroup>
+      <optiongroup name="bottombaroptions">
+        <options>
+          <option name="bottombar_enabled" value="true" />
+        </options>
+      </optiongroup>
+    </optiongroups>
+  </control_options>
+  <control_layouts>
+    <control_layout name="npnxnanbsnfns01001000011">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="true" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns01001000011">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npxnabnsnfns01001000011">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npnxnanbnsnfns01001000011">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns01001000010">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pnxanbnsnfns01001000011">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="true" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="true" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+  </control_layouts>
+  <colorschemes>
+    <colorscheme name="npxnabnsnfns01001000011">
+      <color_group name="infopanel">
+        <group_colors>
+          <color name="link_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x7C2280" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="link_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x0000EE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="name_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x444444" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="title_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x999999" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="infopanelpopup">
+        <group_colors>
+          <color name="link_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="link_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8AD3FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2E77B8" alpha="100" stop="0" />
+                <color rgb="0x094B8E" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xB8B8B8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="name_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8AD3FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bio_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="timer">
+        <group_colors>
+          <color name="duration">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x00D7FF" alpha="100" stop="0" />
+                <color rgb="0x00ABFF" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="elapsed">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFEE347" alpha="100" stop="0" />
+                <color rgb="0xFCCC2A" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="stroke">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xC7C7C7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="window">
+        <group_colors>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2E77B8" alpha="100" stop="0" />
+                <color rgb="0x094B8E" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x409ACE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x4392D1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x145086" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x000000" alpha="20" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="editor">
+        <group_colors>
+          <color name="slide_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="html_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x39A1CB" alpha="100" stop="0" />
+                <color rgb="0x154694" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_down">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x154694" alpha="100" stop="0" />
+                <color rgb="0x39A1CB" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2F84BC" alpha="100" stop="0" />
+                <color rgb="0x1F5BA3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="listitem">
+        <group_colors>
+          <color name="selected_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x053A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x154B82" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="viewed">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x155EA7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3E98D3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="lines">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="glossary">
+        <group_colors>
+          <color name="selected_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x154B82" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3E98D3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="heading_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x236EA7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x236EA7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divc">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x78B6DB" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x4FA7D9" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="resource">
+        <group_colors>
+          <color name="separator">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="outline">
+        <group_colors>
+          <color name="search_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8AD3FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="search_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divc">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x5DA1CE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="transcript">
+        <group_colors>
+          <color name="heading_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="div">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="tabs">
+        <group_colors>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x053A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="selected">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8AD3FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3489C3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="seekcontrol">
+        <group_colors>
+          <color name="btn_icon_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2160A8" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_icon_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_position">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1A6FAA" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="seek_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x165291" alpha="100" stop="0" />
+                <color rgb="0x459CD2" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+                <color rgb="0x053A69" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2F84BC" alpha="100" stop="0" />
+                <color rgb="0x1F5BA4" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="searchinput">
+        <group_colors>
+          <color name="text_active">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2D2D2D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg_active">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="search_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2D2D2D" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="hover_glow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x5DA1CE" alpha="0" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2F84BC" alpha="100" stop="0" />
+                <color rgb="0x1F5BA3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="icon">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2C7CBB" alpha="100" stop="0" />
+                <color rgb="0x1D5E9B" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="scrollarea">
+        <group_colors>
+          <color name="detailb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="detaila">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x5EA1CE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="icons">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3C88C0" alpha="100" stop="0" />
+                <color rgb="0x3368AC" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="button_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2977B8" alpha="100" stop="0" />
+                <color rgb="0x215DA5" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3D9EE5" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="0">
+              <colors>
+                <color rgb="0x2C74B5" alpha="100" stop="0" />
+                <color rgb="0x3181BC" alpha="100" stop="128" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="menu">
+        <group_colors>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x0E4E8C" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3489C3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="logo">
+        <group_colors>
+          <color name="shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="checkbox">
+        <group_colors>
+          <color name="hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x8AD3FF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="check">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2BC400" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1D5E9B" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="button">
+        <group_colors>
+          <color name="btn_icon_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text_shadow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_hover">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x39A1CB" alpha="100" stop="0" />
+                <color rgb="0x154694" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_down">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x154694" alpha="100" stop="0" />
+                <color rgb="0x39A1CB" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2F84BC" alpha="100" stop="0" />
+                <color rgb="0x1F5BA3" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="btn_glow">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x1C599A" alpha="10" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="base">
+        <group_colors>
+          <color name="text">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="diva">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x145086" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="divb">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x4392D1" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="menu_shade">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2B6EAB" alpha="100" stop="0" />
+                <color rgb="0x094784" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3D8DCE" alpha="100" stop="0" />
+                <color rgb="0x3D8DCE" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2E77B8" alpha="100" stop="0" />
+                <color rgb="0x094B8E" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slide_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2E77B8" alpha="100" stop="0" />
+                <color rgb="0x094B8E" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="volume">
+        <group_colors>
+          <color name="thumb_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x063A6A" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="thumb_inner">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3B85BE" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="thumb_bg">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x2771B3" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slider_border">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0x3790D7" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+          <color name="slider_bg">
+            <fill type="linear" rotation="0">
+              <colors>
+                <color rgb="0x2363A9" alpha="100" stop="0" />
+                <color rgb="0x266DB2" alpha="100" stop="128" />
+                <color rgb="0x2363A9" alpha="100" stop="255" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+      <color_group name="HTML">
+        <group_colors>
+          <color name="htmlpage_bg_color">
+            <fill type="linear" rotation="90">
+              <colors>
+                <color rgb="0xFFFFFF" alpha="100" stop="0" />
+              </colors>
+            </fill>
+          </color>
+        </group_colors>
+      </color_group>
+    </colorscheme>
+  </colorschemes>
+  <string_tables>
+    <string_table name="npxnabnsnfns01001000011">
+      <string id="acc_active">aktif</string>
+      <string id="check_include">Eklemek için işaretle</string>
+      <string id="clear">Temizle ve Menüye dön</string>
+      <string id="close">Kapat</string>
+      <string id="acc_closed_captions">Altyazılar. Altyazıları açmak ve kapatmak için boşluk tuşuna basın.</string>
+      <string id="continue">Devam Et</string>
+      <string id="continueresponsive">Devam Et</string>
+      <string id="exit">Çıkış</string>
+      <string id="filter">Filtre</string>
+      <string id="finish">SON</string>
+      <string id="acc_finish">sonlandırır</string>
+      <string id="definition">Tanım</string>
+      <string id="acc_definition">tanım</string>
+      <string id="glossary">Sözlük</string>
+      <string id="terms">Terimler</string>
+      <string id="outline">MENÜ</string>
+      <string id="disabled_orientation">Lütfen cihazınızı döndürün</string>
+      <string id="next">İLERİ</string>
+      <string id="acc_next">ileri</string>
+      <string id="transcript_chk">Notlar</string>
+      <string id="transcript">Notlar</string>
+      <string id="bio">Kişisel Bilgiler</string>
+      <string id="more_info">Ek bilgi</string>
+      <string id="closed_captions">Altyazılar</string>
+      <string id="acc_pause">duraklat</string>
+      <string id="acc_play">yürüt</string>
+      <string id="send_an_email">E-posta gönder</string>
+      <string id="prev">GERİ</string>
+      <string id="acc_previous">geri</string>
+      <string id="question_list">Soru Listesi</string>
+      <string id="acc_replay">yeniden yürüt</string>
+      <string id="resources">Kaynaklar</string>
+      <string id="acc_resources">kaynaklar</string>
+      <string id="restart">Yeniden Başlat</string>
+      <string id="resume">Devam</string>
+      <string id="search">Ara…</string>
+      <string id="acc_search_input">ara</string>
+      <string id="search_in">Arama alanı:</string>
+      <string id="search_results">Arama Sonuçları</string>
+      <string id="acc_skipnavigation">Navigasyonu Atla. Slayta dönmek için Enter tuşuna bas.</string>
+      <string id="slide_text_chk">Slayt Metni</string>
+      <string id="submitall">TÜMÜNÜ GÖNDER</string>
+      <string id="acc_submitall">tümünü gönderir</string>
+      <string id="submit">GÖNDER</string>
+      <string id="acc_submit">gönder</string>
+      <string id="acc_volume">ses</string>
+    </string_table>
+  </string_tables>
+  <fonts>
+    <font name="Open Sans">
+      <files>
+        <file bold="true" italic="false" />
+        <file bold="false" italic="false" />
+      </files>
+    </font>
+  </fonts>
+  <sounds enabled="true" />
+  <nav_data>
+    <outline>
+      <links>
+        <slidelink slideid="_player.6hXm2mq7nx5" displaytext="İş Sağlığı Ve Güvenliği Eğitim Değerlendirme Testi" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.6hXm2mq7nx5.6LCdquwIhCo" displaytext=" Soru 1" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6jAj7VAV9C4" displaytext=" Soru 2" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6TfHUD0RM2d" displaytext=" Soru 3" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6UzCZvGm7jU" displaytext=" Soru 4" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6TXcg8t3S9P" displaytext=" Soru 5" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5tUauBGDYWy" displaytext=" Soru 6" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5yt4LCvazSn" displaytext=" Soru 7" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5a2CySgz9ty" displaytext=" Soru 8" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5wXZQnrSu4O" displaytext=" Soru 9" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6ObZrT0jpnD" displaytext=" Soru 10" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5aELIZkhy9i" displaytext=" Soru 11" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5ZNJgdTr0tG" displaytext=" Soru 12" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5jAuNsFl5Ov" displaytext=" Soru 13" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5yncfWRAWam" displaytext=" Soru 14" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6kXCZl540UW" displaytext=" Soru 15" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6LlPjW6Zdgu" displaytext=" Soru 16" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6b3SEor5NpX" displaytext=" Soru 17" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6CgjNOTBOhj" displaytext=" Soru 18" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5j9ETxeZ6iD" displaytext=" Soru 19" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6lwXxVIfIsU" displaytext=" Soru 20" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6JCrEL2pWbz" displaytext=" Soru 21" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6D1FjSLjPma" displaytext=" Soru 22" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.67kocxQ8vBI" displaytext=" Soru 23" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5equsfm3vtV" displaytext=" Soru 24" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.6WitylAlfw8" displaytext=" Soru 25" expand="false" type="slide" />
+            <slidelink slideid="_player.6hXm2mq7nx5.5ZxF6hpBX4l" displaytext="Sınav Sonu" expand="false" type="slide" />
+          </links>
+        </slidelink>
+      </links>
+    </outline>
+    <search>
+      <slidetext slideid="6hXm2mq7nx5.6LCdquwIhCo" slidebank="false" type="slide">meslek hastalığı a a a a b b b b İş kazası c c c c kaza d d d d yaralanma sigortalının çalıştığı veya yaptığı işin niteliğinden dolayı tekrarlanan bir sebeple veya işin yürütüm şartları yüzünden uğradığı geçici veya sürekli hastalık, bedensel veya ruhsal özürlülük hallerine ne ad verilir?  soru 1 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6jAj7VAV9C4" slidebank="false" type="slide">maddi tazminat davası a a a a b b b b destekten yoksun kalma davası c c c c rücu davası              d d d d kamu davası sosyal güvenlik kurumu’ nun işverene açtığı davaya ne ad verilir?  soru 2 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6TfHUD0RM2d" slidebank="false" type="slide">elektrik çarpması          a a a a b b b b tehlikeli makineler c c c c platformdan kayma, düşme                  d d d d bilgisayarlı çalışma aşağıdakilerden hangisi ölümlü iş kazası nedenlerinden biri değildir?  soru 3 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6UzCZvGm7jU" slidebank="false" type="slide">İş sağlığı ve güvenliği eğitimi az tehlikeli işyerlerinde 3 yılda bir en 8 saat olmalıdır. a a a a b b b b eğitimlerde geçen süre çalışma süresinden sayılmaz. c c c c çalışanlar işyerinde düzenlenecek olan eğitimlere katılmak ve bu konudaki talimat ve prosedürlere uymakla yükümlüdürler. d d d d özel önlem alınmasını gerektiren alanlarda çalışanlara özel eğitim verilir. İşyerlerinde çalışanlara verilecek iş sağlığı ve güvenliği eğitimleri için aşağıdaki belirtilenlerden hangisi yanlıştır?  soru 4 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6TXcg8t3S9P" slidebank="false" type="slide">kaydım, ama düşmedim. a a a a b b b b firmada yangın çıktı, bir kişi dumandan etkilendi, neyse ki durum kontrol altına alındı.  c c c c otobüs durağa hızla daldı, 1 dakika önce orada duruyordum. az kalsın ezilecektim. d d d d merdivenden düşmek üzereydim, ama düşmedim. aşağıdakilerden hangisi ramak kala duruma örnek oluşturmaz?  soru 5 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5tUauBGDYWy" slidebank="false" type="slide">kişisel koruyucu ekipman kullanmadan çalışmak a a a a b b b b görevi dışında iş yapmak c c c c şakalaşmak, kızgınlık, üzgünlük, telaş, şaşırma d d d d merdiven korkuluğunun olmaması aşağıdakilerden hangisi tehlikeli durumdur?  soru 6 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5yt4LCvazSn" slidebank="false" type="slide">kaza olduktan sonra konuyu ele alan ve kaza olasılıklarını ortadan kaldırmaya yönelik çalışmalar yapan teknik bir bilim dalıdır. a a a a b b b b İşyerlerinde çalışanların işin yapılması ile ilgili olarak ortaya çıkan tehlikelerden, bedensel ve ruhsal olarak zarar görmemesi için alınması gerekli hukuki, teknik ve tıbbi önemleri sağlamaya yönelik çalışmalardır.  c c c c İşin yapılması sırasında işçilerin karşılaştığı tehlikelerin ortadan kaldırılması veya azaltılması konusunda, esas olarak işverene, kamu hukuku temelinde getirilen yükümlere ilişkin hukuk kurallarının bütünüdür.  d d d d İş yerlerindeki çalışma koşullarının sağlık ve güvenlik içinde olmasını temin eden ve sonucunda iş kazaları ile meslek hastalıklarını azaltan bir bilimdir aşağıdakilerden hangisi iş sağlığı ve güvenliğinin amaç ve kapsamına uygun bir tanım değildir?   soru 7 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5a2CySgz9ty" slidebank="false" type="slide">yaş a a a a b b b b beslenme c c c c aydınlatma d d d d cinsiyet aşağıdakilerden hangisi iş ve sağlık ilişkisini belirleyen çevresel faktörlerden biridir?   soru 8 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5wXZQnrSu4O" slidebank="false" type="slide">yükün ağırlığını azaltmak gerekir a a a a b b b b hepsi c c c c bir seferde taşınacak yük miktarını (sayısını) düşürmek gerekir. d d d d fazla yükler için birden fazla kişiyi devreye sokmak gerekir. ağır yüklerin elle taşınmasında ergonomik açıdan aşağıdaki uygulamalardan hangisi yapılmalıdır?  soru 9 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6ObZrT0jpnD" slidebank="false" type="slide">d d d d c c c c b b b b a a a a aşağıdaki hareketlerden hangisinin yapılması sonucu bel ve sırt incinmelerine yol açabilir?  soru 10 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5aELIZkhy9i" slidebank="false" type="slide">özellikle vücudun belden dönmesini gerektiren aşırı sık veya aşırı uzun süreli bedensel çalışmalar a a a a b b b b İşlemin gerektirdiği, işçi tarafından değiştirilemeyen çalışma temposu c c c c yetersiz ara ve dinlenme süresi d d d d sık sık mola vermek aşağıda belirtilen çalışma şekillerinden hangisini gerektiren işler, sırt ve bel incinmesi riski oluşturan işlerden değildir?  soru 11 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5ZNJgdTr0tG" slidebank="false" type="slide">hava akım hızı a a a a b b b b gürültü c c c c hava sıcaklığı d d d d radyant isı aşağıdakilerden hangisi insanların ortamla ısı alışverişine etki eden faktörlerden değildir?  soru 12 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5jAuNsFl5Ov" slidebank="false" type="slide">gözlerin korunması a a a a b b b b hızlı yazma teknikleri c c c c zorlayıcı travmalar ve korunma yolları  d d d d doğru oturma şekilleri ekranlı araçlarla çalışanlara verilen eğitimlerden hangisi İş sağlığı ve güvenliği kapsamına girmez?  soru 13 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5yncfWRAWam" slidebank="false" type="slide">d d d d c c c c b b b b a a a a hangisi “yasak” işaretidir?  soru 14 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6kXCZl540UW" slidebank="false" type="slide">elektrik panosu altındaki yalıtımlı paspas yer değiştirilebilir. a a a a b b b b elektrik panosundan koku geldiğinde yetkili harici müdahale edilebilir. c c c c elektrik panosu önünde, yanında ve üstünde malzeme bulunabilir. d d d d elektrik panosu ve diğer elektrikli ekipmanların etrafına, üstüne ve çevresine su dolu bidon/kova/kap  konulmamalı ve su ile teması engellenmelidir. elektrik panosu ile ilgili aşağıdakilerden hangisi doğrudur?  soru 15 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6LlPjW6Zdgu" slidebank="false" type="slide">hayat üçgeni uygulanması  a a a a b b b b balkonlardan ya da pencerelerden atlamak c c c c asansör kullanılması d d d d merdivenlere ya da çıkışlara doğru koşulması aşağıdakilerden hangisi deprem sırasında yapılması gereken bir uygulamadır?  soru 16 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6b3SEor5NpX" slidebank="false" type="slide">destek elemanı görevlendirilmesi zorunlu değildir a a a a b b b b 1 adet destek elemanı c c c c 2 adet destek elemanı d d d d 3 adet destek elemanı İşyerlerinde acil durumlar hakkında yönetmeliğe göre, 10'dan az çalışanı olan ve az tehlikeli sınıfta yer alan işyerlerinde arama, kurtarma, tahliye ve yangınla mücadele konularında kaç adet destek elemanı görevlendirilmelidir?  soru 17 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6CgjNOTBOhj" slidebank="false" type="slide">114 - 186 a a a a b b b b 110 - 112                  c c c c 110 - 187                                d d d d 156 - 112  İtfaiye ve hızır acil’ in sırasıyla telefon numaraları hangi seçenekte doğru verilmiştir?  soru 18 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5j9ETxeZ6iD" slidebank="false" type="slide">abc tipi kuru kimyevi toz a a a a b b b b bc tipi kuru kimyevi toz c c c c su d d d d co2 (karbondioksit) b sınıfı yangınlarda aşağıdakilerden hangisi söndürücü olarak kullanılmaz?  soru 19 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6lwXxVIfIsU" slidebank="false" type="slide">oksijen a a a a b b b b isı c c c c yanıcı madde d d d d co2 (karbondioksit) aşağıdakilerden hangisi yangın üçgeninin kenarlarından biri değildir?  soru 20 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6JCrEL2pWbz" slidebank="false" type="slide">yanan bölge soğuk suyla yıkanmalıdır.              a a a a b b b b yoğurt sürülmelidir c c c c oluşan su dolu kesecikler patlatılmalıdır d d d d ağrı kesici verilmelidir yanıkta ilk yapılması gereken müdahale hangisidir?  soru 21 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6D1FjSLjPma" slidebank="false" type="slide">1 nefes 5 bası a a a a b b b b 2 nefes 5 bası c c c c 2 nefes 30 bası d d d d 1 nefes 15 bası erişkin bir insanda yapay solunum ve dış kalp masajı oranı nedir?  soru 22 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.67kocxQ8vBI" slidebank="false" type="slide">ambulans çağırmak. a a a a b b b b hasta/yaralıyı sakinleştirmek. c c c c hasta / yaralıya ağrı kesici vermek. d d d d çevredeki telaşlıları uzaklaştırmak. aşağıdakilerden hangisi ilkyardımda yapılırsa yanlış olur?  soru 23 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5equsfm3vtV" slidebank="false" type="slide">sağlık personelinin yaptığı müdahaledir. a a a a b b b b İlaçla yapılan müdahaledir. c c c c İlkyardım eğitimi almış kişinin olay yerinde yaptığı müdahaledir. d d d d ambulansta yapılan müdahaledir. aşağıdakilerden hangisi ilkyardımın tanımlarındandır?  soru 24 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.6WitylAlfw8" slidebank="false" type="slide">heimlich manevrası uygulanır. a a a a b b b b dokunulmaz c c c c öksürmeye teşvik edilir. d d d d yaralı oturur pozisyon verilerek rahatlatılır. hasta/yaralıda solunum yollarında tam tıkanma varsa hangisi uygulanır?  soru 25 İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari </slidetext>
+      <slidetext slideid="6hXm2mq7nx5.5ZxF6hpBX4l" slidebank="false" type="slide">tebrİkler ! soruları  tamamladınız.  şimdi sol taraftaki menüden cevaplarınızı gözden geçirebilir veya sınavı bitir seçeneği ile sınavınızı tamamlayabilirsiniz.  sınav sonu İş sağliği güvenlİğİ eğİtİmİ değerlendİrme test sorulari sınavı bitir sınavı bitir sınavı bitir sınavı bitir sınavı bitir </slidetext>
+      <slidetext slideid="5jPXmyKSdue" slidebank="true" type="slide">1. sigortalının çalıştığı veya yaptığı işin niteliğinden dolayı tekrarlanan bir sebeple veya işin yürütüm şartları yüzünden uğradığı geçici veya sürekli hastalık, bedensel veya ruhsal özürlülük hallerine ne ad verilir? meslek hastalığı   meslek hastalığı   meslek hastalığı   meslek hastalığı   meslek hastalığı   meslek hastalığı   İş kazası       İş kazası       İş kazası       İş kazası       İş kazası       İş kazası       kaza                               kaza                               kaza                               kaza                               kaza                               kaza                               yaralanma yaralanma yaralanma yaralanma yaralanma yaralanma </slidetext>
+      <slidetext slideid="6S9SCJDyImS" slidebank="true" type="slide">kibrit-çakmak kullanmak suretiyle gaz kaçağı aramak a a a a b b b b alet ve makinelerin koruyucu aksamlarını çıkararak kullanmak c c c c yetersiz aydınlatma ve havalandırma sistemleri d d d d kişisel koruyucuların kullanılmaması çalışma mevzuatı  ve çalışanların yasal hak ve sorumlulukları genel konular  aşağıdakilerden hangisi tehlikeli durumlar içinde yer alır? </slidetext>
+    </search>
+  </nav_data>
+  <resource_data description="" />
+  <transcript_data />
+  <glossary_data />
+</bwFrame>

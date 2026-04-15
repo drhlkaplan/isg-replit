@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="_6nxyGCVq0de_course_id" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+      <general>
+        <title>
+          <langstring xml:lang="x-none">Genel Konular</langstring>
+        </title>
+        <description>
+          <langstring xml:lang="x-none">Az Tehlikeli İş Yerleri İçin Genel İSG Konuları Eğitimi</langstring>
+        </description>
+      </general>
+      <lifecycle>
+        <version>
+          <langstring xml:lang="x-none">1</langstring>
+        </version>
+        <status>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">Final</langstring>
+          </value>
+        </status>
+      </lifecycle>
+      <metametadata>
+        <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      </metametadata>
+      <educational>
+        <typicallearningtime>
+          <datetime>PT0H0M0S</datetime>
+        </typicallearningtime>
+      </educational>
+      <rights>
+        <cost>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </cost>
+        <copyrightandotherrestrictions>
+          <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+          </source>
+          <value>
+            <langstring xml:lang="x-none">yes</langstring>
+          </value>
+        </copyrightandotherrestrictions>
+      </rights>
+    </lom>
+  </metadata>
+  <organizations default="Genel_Konular_ORG">
+    <organization identifier="Genel_Konular_ORG">
+      <title>Genel Konular</title>
+      <item identifier="Genel_Konular_-_Az_Tehlikeli_SCO" isvisible="true" identifierref="__6nxyGCVq0de_course_id_RES">
+        <title>Genel Konular</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="__6nxyGCVq0de_course_id_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+      <file href="story_content/thumbnail.jpg" />
+      <file href="mobile/6j0FonaL6vU_M_656_656.png" />
+      <file href="mobile/6EfEhDaPozi.png" />
+      <file href="mobile/69lL3nXNnFE.gif" />
+      <file href="mobile/68Qll7zuQW3.gif" />
+      <file href="mobile/6OZlXtC3CLa.gif" />
+      <file href="mobile/6napXG7Fojw.gif" />
+      <file href="meta.xml" />
+      <file href="story_content/triggers.js" />
+      <file href="story_content/user.js" />
+      <file href="mobile/txt__default_5i1kVORvbVp.png" />
+      <file href="mobile/Shape65hUgOrXZOI.png" />
+      <file href="mobile/Shape5eBtTyn5Fou.png" />
+      <file href="mobile/Shape6Fbp2VC2JYA.png" />
+      <file href="mobile/Shape6JiM9O6R0pr.png" />
+      <file href="mobile/Shape6AK7UE1jsbs.png" />
+      <file href="mobile/Shape6dfqFookEVq.png" />
+      <file href="mobile/Shape5elzWE2YDXS.png" />
+      <file href="mobile/Shape5dh3Ipw5C8r.png" />
+      <file href="mobile/Shape6aoSCBOyig1.png" />
+      <file href="mobile/Shape5oGu93zCk07.png" />
+      <file href="mobile/Shape5dR4mrEU5Wb.png" />
+      <file href="mobile/Shape6TmAUANY4eL.png" />
+      <file href="mobile/Shape6eryotGL4qW.png" />
+      <file href="mobile/Shape5uagrFRYs3N.png" />
+      <file href="mobile/Shape5fWVkqwvH2p.png" />
+      <file href="mobile/Shape6m2WS820OEt.png" />
+      <file href="html5/data/css/output.min.css" />
+      <file href="html5/data/js/5fyxAmffNTa.js" />
+      <file href="html5/data/js/5oxNeSEQuze.js" />
+      <file href="html5/data/js/5sTuvQAidHV.js" />
+      <file href="html5/data/js/64JFzXn49qN.js" />
+      <file href="html5/data/js/69VvpyP6URM.js" />
+      <file href="html5/data/js/6JCeTb6v4q2.js" />
+      <file href="html5/data/js/6Mr4AuALeBS.js" />
+      <file href="html5/data/js/6QKnvuTGveG.js" />
+      <file href="html5/data/js/6U4D1reNAok.js" />
+      <file href="html5/data/js/6VY1nY2wqfV.js" />
+      <file href="html5/data/js/data.js" />
+      <file href="html5/data/js/frame.js" />
+      <file href="html5/data/js/paths.js" />
+      <file href="html5/lib/scripts/bootstrapper.min.js" />
+      <file href="html5/lib/scripts/frame.desktop.min.js" />
+      <file href="html5/lib/scripts/frame.mobile.min.js" />
+      <file href="html5/lib/scripts/slides.min.js" />
+      <file href="html5/lib/stylesheets/desktop.min.css" />
+      <file href="html5/lib/stylesheets/mobile.min.css" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-bold.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-light.woff" />
+      <file href="html5/lib/stylesheets/mobile-fonts/open-sans-regular.woff" />
+      <file href="analytics-frame.html" />
+      <file href="story.html" />
+      <file href="index_lms.html" />
+      <file href="lms/AICCComm.html" />
+      <file href="lms/blank.html" />
+      <file href="lms/browsersniff.js" />
+      <file href="lms/goodbye.html" />
+      <file href="lms/scormdriver.js" />
+    </resource>
+  </resources>
+</manifest>
